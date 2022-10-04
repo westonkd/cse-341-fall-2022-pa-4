@@ -1,9 +1,7 @@
 require("dotenv").config();
 
-const port = process.env.PORT || 3000;
-
 module.exports = {
-  port,
-  protocol: process.env.PROTOCOL,
-  host: process.env.HOST || `localhost:${port}`,
+  port: process.env.PORT || 3000,
+  protocol: process.env.PROTOCOL || "https",
+  host: process.env.HOST || "cse-341-fall-2022-pa-4.onrender.com",
 };
