@@ -1,0 +1,36 @@
+// Local Requests
+// Index
+GET http://localhost:8080/contacts
+###
+GET http://localhost:8080/contacts?firstName=Test
+
+// Show
+###
+GET http://localhost:8080/contacts/6334f438e4477671697a8b07
+
+// Update
+###
+PUT http://localhost:8080/contacts/6334f438e4477671697a8b07 HTTP/1.1
+Content-Type: application/json
+
+{
+  "lastName": "Changed"
+}
+
+// Create
+###
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Banana",
+  "lastName": "Dransfield"
+}
+
+// Delete
+###
+DELETE http://localhost:8080/contacts/6334eacfddd89c137afc99ea HTTP/1.1
+
+###
+// Deployed Requests
+TODO

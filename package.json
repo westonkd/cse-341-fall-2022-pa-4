@@ -1,0 +1,26 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Fall 2022 Assignment One",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install && npm run swagger-autogen",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "watch": "nodemon --inspect index.js",
+    "swagger-autogen": "node ./swagger.js"
+  },
+  "author": "Weston Dransfield",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.9.1",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.1",
+    "nodemon": "^2.0.19",
+    "swagger-autogen": "^2.22.0"
+  }
+}
