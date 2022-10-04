@@ -7,7 +7,7 @@ const doc = {
     description: "CSE 341",
   },
   host: appConfig.host,
-  schemes: ["http"],
+  schemes: [appConfig.protocol],
 };
 
 const outputFile = "./swagger-docs.json";
