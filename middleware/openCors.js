@@ -1,6 +1,7 @@
-const openCors = (_req, res, next) => {
-  res.set("Access-Control-Allow-Origin", "*");
-  next();
+const cors = require("cors");
+
+var corsOptions = {
+  origin: "*http://example.com*",
 };
 
-module.exports = openCors;
+module.exports = cors(corsOptions);
